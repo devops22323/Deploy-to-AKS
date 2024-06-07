@@ -79,6 +79,7 @@ stages:
             inputs:
               action: 'deploy'
               namespace: 'default'
+              kubernetesServiceConnection: 'K8S'
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
